@@ -1,7 +1,7 @@
 FROM openjdk:11
 
 ENV CMAK_VERSION=3.0.0.5
-ENV ZK_HOSTS="zk001.nezumi.stream.kks.ynwm.yahoo.co.jp:2181,zk002.nezumi.stream.kks.ynwm.yahoo.co.jp:2181,zk003.nezumi.stream.kks.ynwm.yahoo.co.jp:2181"
+ENV ZK_HOSTS="zookeeper.kazono.example.co.jp:2181"
 
 RUN wget "https://github.com/yahoo/CMAK/archive/${CMAK_VERSION}.tar.gz" \
     && tar -xzf ${CMAK_VERSION}.tar.gz \
